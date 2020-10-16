@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url(../fonts/JetBrainsMono-Regular.ttf);
+}
+
+body {
+	background-color: #d9cdd6;
+	padding: 20px;
+	font-size: 20px;
+}
+
+code {
+	font-size: 20px;
+	font-family: 'JetBrains Mono';
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+}
+.photo {
+	border-radius: 50%;
+	box-shadow: 0 0 7px #666;
+	float: left;
+}
+.skill_list{
+	list-style-type: none;
+}
+.skill_list_element{
+	margin-top: 20px;
+}
+.block__info{
+	margin: 10px;
+	width: 45%;
+	padding: 7px;
+	background-color: white;
+	border-radius: 30px;
+}
+.about{
+	display: flex;
+	justify-content: space-between;
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
