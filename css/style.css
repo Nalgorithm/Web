@@ -43,7 +43,12 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
-footer a {
+footer a{
 	text-decoration: none;
 	color: black;
+}
+footer a:hover {
+	text-decoration: none;
+	color: white;
+	background: black;
 }
