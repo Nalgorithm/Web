@@ -13,6 +13,10 @@ code {
 	font-size: 20px;
 	font-family: 'JetBrains Mono';
 }
+.container{
+	margin: auto;
+	width: 75%;
+}
 .header{
 	display: flex;
 	justify-content: space-around;
@@ -30,23 +34,52 @@ code {
 }
 .block__info{
 	margin: 10px;
-	width: 45%;
 	padding: 7px;
 	background-color: white;
 	border-radius: 30px;
 }
-.about{
-	display: flex;
-	justify-content: space-between;
+main {
+	height: 1100px;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(300px, 2fr) );
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "about about about skills"
+						 "work work work skills"
+						 "work work work skills"
+						 "code code code code"
+						 "goose goose goose goose";
 }
+
+.about{
+	grid-area: about;
+}
+
+.skills{
+	grid-area: skills;
+}
+
+.work_expirence{
+	grid-area: work;
+}
+
+.best_code{
+	grid-area: code;
+}
+
+.goose{
+	grid-area: goose;
+}
+
 footer {
 	display: flex;
 	justify-content: space-around;
 }
+
 footer a{
 	text-decoration: none;
 	color: black;
 }
+
 footer a:hover {
 	text-decoration: none;
 	color: white;
