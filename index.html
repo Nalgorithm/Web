@@ -7,10 +7,39 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="modal-wrapper" id="avatarWrapper">
+            <div class="modal-body">
+                <div class="modal-head">
+                    <div class="modal-close">x</div>
+                </div>
+                <div class="modal-content">
+                    <img src="images/photo.jpeg" alt="мое фото" style="display: block;">
+                </div>
+            </div>
+            <div class="modal-bg"></div>
+        </div>
+        <div class="modal-wrapper" id="informationWrapper">
+            <div class="modal-body">
+                <div class="modal-head">
+                    <div>Мои Контакты</div>
+                    <div class="modal-close">x</div>
+                </div>
+                <div class="modal-content">
+                    <footer>
+                        <ul class="list">
+                            <li><a href="mailto:nikita.logvinenko@mail.ru">nikita.logvienko@mail.ru</a></li>
+                            <li><a href="https://vk.com/id119739646">Вконтакте</a></li>
+                            <li><a href="https://github.com/Nalgorithm">Github</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+            <div class="modal-bg"></div>
+        </div>
         <div class="container">
             <header class="header"> 
-                <div >
-                    <img class="photo" src="images/photo.jpeg" width="150" height="150" alt="мое фото">
+                <div>
+                    <img class="photo" src="images/photo.jpeg" width="150" height="150" alt="мое фото" id="photo">
                 </div>
                 <div class="info">
                     <h1>Никита Логвиненко</h1>
@@ -32,7 +61,7 @@
                     
                     <section class="block__info skills">
                         <h3>Мои навыки</h3>
-                        <ul class="skill_list">
+                        <ul class="list">
                             <li class="skill_list_element">C/C++</li>
                             <li class="skill_list_element">Алгоритмы и структуры данных</li>
                             <li class="skill_list_element">Linux</li>
@@ -87,14 +116,11 @@
                    
 
             </main>
-            <h3>Контакты</h3>   
-            <footer>
-                
-                <a href="mailto:nikita.logvinenko@mail.ru">nikita.logvienko@mail.ru</a> 
-                <a href="https://vk.com/id119739646">Вконтакте</a> 
-                <a href="https://github.com/Nalgorithm">Github</a>
-            </footer>
+            <div id="contacts">
+                <button class="contact-button" id="showModal">Контакты</button>
+            </div>
         </div>
+        <script src="js/qsort.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
