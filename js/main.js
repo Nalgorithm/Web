@@ -21,6 +21,5 @@ function initModal(wrapperId, showBtnId) {
     })
 }
 
-
 initModal("informationWrapper", "showModal")
 initModal("avatarWrapper", "photo")
