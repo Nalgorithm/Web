@@ -5,8 +5,17 @@ const generateMessage = (content) => {
     messageText.innerHTML = content
     messageDiv.appendChild(messageText)
 
+    const btn = document.createElement("button");
+    btn.className = "chat__msg_del";
+    btn.innerHTML = "x";
+    btn.addEventListener("click", function (e) {
+        e.target.parentNode.remove();
+    });
+    messageDiv.append(btn)
+
     return messageDiv;
 }
+
 
 let dict = {
     first: ['Привет ', 'Салам ', 'Здарова ', 'Приветствую '],
